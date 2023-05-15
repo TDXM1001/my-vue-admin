@@ -54,7 +54,19 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+  {
+    path: '/engineering',
+    component: Layout,
+    children: [
+      {
+        path: 'engineering',
+        name: "Engineering",
+        component: () => import("@/views/engineering/index"),
+        meta: { title: "engineering", icon: "el-icon-picture-outline-round" }
+      }
+    ],
 
+  },
   {
     path: '/example',
     component: Layout,
