@@ -11,7 +11,7 @@ function getMethodObj(method, service = 'WeChatApplet', module = 'wechatapplet')
   }
 }
 
-
+// 微信公众号
 export function getArrearsRecordList(data) {
   console.log("传入的data", data);
   data = Object.assign(getMethodObj('getArrearsRecordList', 'StdWechat', 'wechat'), data)
@@ -21,3 +21,5 @@ export function getArrearsRecordList(data) {
     data
   })
 }
+
+
